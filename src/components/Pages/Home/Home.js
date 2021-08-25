@@ -6,7 +6,7 @@ import WhiteDress from '../../ProductCards/WhiteDress/WhiteDress';
 import ShinyDress from '../../ProductCards/ShinyDress/ShinyDress';
 import RedDress from '../../ProductCards/RedDress/RedDress';
 import Products from '../../ProductCards/Products/Products';
-
+import { Link } from 'react-router-dom';
 
 import { products } from "../../../data/products";
 
@@ -16,7 +16,7 @@ const Home = () => {
             <Banner />
             <div className="wrapper">
             <div className="section">
-                <ElegantDress />
+                <Link to={{pathname: '/pdp', state: {key: "hello"} }}><ElegantDress /></Link>
                 <ProductCard product={products[3]} />
                 <WhiteDress />
             </div>

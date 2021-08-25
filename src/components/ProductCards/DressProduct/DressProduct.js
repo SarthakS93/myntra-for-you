@@ -24,9 +24,17 @@ const tabs = [
   { name: "Delivery", content: <Delivery /> },
 ];
 
+function setActiveImageIndex(x) {
+  console.log(x);
+}
+
+function setActiveTabIndex(x) {
+  console.log(x);
+}
+
 const DressProduct = () => {
-  const [activeImageIndex, setActiveImageIndex] = useState<number>(0);
-  const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
+  const activeImageIndex = 0;
+  const activeTabIndex = 1;
 
   return (
     <div className="dress-product-container">

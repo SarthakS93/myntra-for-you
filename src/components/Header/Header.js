@@ -9,10 +9,12 @@ const Header = () => {
   return (
     <header className="header">
       <div className="top-section">
-        <div className="logo">
-          <img src={Logo} alt="Logo" />
-          <p>Myntra</p>
-        </div>
+        <Link to="/" style={{textDecoration: "none"}}>
+          <div className="logo">
+            <img src={Logo} alt="Logo" />
+            <p>Myntra</p>
+          </div>
+        </Link>
         <div className="social-links">
           {/* {socialLinks.map(({ Icon, id, size }, index) => (
             <div className="icon" key={index}>
@@ -29,7 +31,7 @@ const Header = () => {
       </div>
       <div className="bottom-section">
         {navLinks.map(({ name, path }, index) => (
-          <Link to={path}><p className="link" key={index}>{name}</p></Link>
+          <Link to={path} style={{textDecoration: "none"}}><p className="link" key={index}>{name}</p></Link>
         ))}
       </div>
     </header>

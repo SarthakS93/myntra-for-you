@@ -4,6 +4,7 @@ import Home from '../components/Pages/Home/Home';
 import ReusableStore from '../components/Pages/ReusableStore/ReusableStore';
 import SharingStore from '../components/Pages/SharingStore/SharingStore';
 import BuybackStore from '../components/Pages/BuybackStore/BuybackStore';
+import PDP from '../components/Pages/PDP/PDP';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -22,6 +23,9 @@ function MainContainer() {
             </Route>
             <Route path="/buyback-store">
               <BuybackStore />
+            </Route>
+            <Route path="/pdp">
+              <PDP />
             </Route>
             <Route path="/">
               <Home />
