@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import Logo from "../../assets/icons/myntra-icon.png";
-import { socialLinks, menulinks, links } from "../../data/links";
+import { socialLinks, menulinks, navLinks } from "../../data/links";
 import { purple } from "../../constants/Colors";
 
 const Header = () => {
@@ -27,11 +27,11 @@ const Header = () => {
         </div>
       </div>
       <div className="bottom-section">
-        {/* {links.map(({ name, path }, index) => (
+        {navLinks.map(({ name, path }, index) => (
           <p className="link" key={index}>
             {name}
           </p>
-        ))} */}
+        ))}
       </div>
     </header>
   );

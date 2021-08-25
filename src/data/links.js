@@ -36,21 +36,21 @@ export const menulinks = [
   },
 ];
 
-export const links = [
+export const navLinks = [
   {
     name: "Home",
     path: "/",
   },
   {
-    name: "Shop",
+    name: "Buy Back Store",
     path: "/",
   },
   {
-    name: "Blog",
+    name: "Reusable Store",
     path: "/",
   },
   {
-    name: "Contact",
+    name: "Sharing Center",
     path: "/",
   },
 ];
