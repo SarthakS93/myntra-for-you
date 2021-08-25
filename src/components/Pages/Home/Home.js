@@ -1,14 +1,14 @@
-import Banner from '../Banner/Banner';
+import Banner from '../../Banner/Banner';
 
-import ElegantDress from '../ProductCards/ElegantDress/ElegantDress';
-import ProductCard from '../ProductCards/Products/ProductCard';
-import WhiteDress from '../ProductCards/WhiteDress/WhiteDress';
-import ShinyDress from '../ProductCards/ShinyDress/ShinyDress';
-import RedDress from '../ProductCards/RedDress/RedDress';
-import Products from '../ProductCards/Products/Products';
+import ElegantDress from '../../ProductCards/ElegantDress/ElegantDress';
+import ProductCard from '../../ProductCards/Products/ProductCard';
+import WhiteDress from '../../ProductCards/WhiteDress/WhiteDress';
+import ShinyDress from '../../ProductCards/ShinyDress/ShinyDress';
+import RedDress from '../../ProductCards/RedDress/RedDress';
+import Products from '../../ProductCards/Products/Products';
 
 
-import { products } from "../../data/products";
+import { products } from "../../../data/products";
 
 const Home = () => {
     return (

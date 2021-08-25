@@ -43,14 +43,14 @@ export const navLinks = [
   },
   {
     name: "Buy Back Store",
-    path: "/",
+    path: "/buyback-store",
   },
   {
     name: "Reusable Store",
-    path: "/",
+    path: "/reusable-store",
   },
   {
     name: "Sharing Center",
-    path: "/",
+    path: "/sharing-center",
   },
 ];

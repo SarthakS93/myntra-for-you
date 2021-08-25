@@ -11,22 +11,19 @@ export const products = [
     name: "Women's costume",
     image: Image1,
     price: 100,
-    description:
-      "Fashion is something we deal with everyday. Even people who say t…",
+    description: "Fashion is something we deal with everyday. Even people who say t…",
   },
   {
     name: "Men's black hat",
     image: Image2,
     price: 54,
-    description:
-      "The fedora hat is reimagined for Pre-Fall 2020 with a maxi embroidered label de...",
+    description: "The fedora hat is reimagined for Pre-Fall 2020 with a maxi embroidered label de...",
   },
   {
     name: "Dress Karl Lagerfeld",
     image: Image3,
     price: 640,
-    description:
-      "Another masterpiece from the legendary designer. He designed new dress dev…",
+    description: "Another masterpiece from the legendary designer. He designed new dress dev…",
   },
   {
     name: "Men's black tie",
@@ -38,14 +35,12 @@ export const products = [
     name: "Men’s jacket Off-white",
     image: Image5,
     price: 21,
-    description:
-      "Off-White scuffed denim jacket. Faded effect, baggy cut, pointed collar, clasp…",
+    description: "Off-White scuffed denim jacket. Faded effect, baggy cut, pointed collar, clasp…",
   },
   {
     name: "Cotton blouse Dries van noten",
     image: Image6,
     price: 180,
-    description:
-      "The fedora hat is reimagined for pre-fall 202 with a maxi embroided label design",
+    description: "The fedora hat is reimagined for pre-fall 202 with a maxi embroided label design",
   },
 ];

@@ -3,6 +3,7 @@ import "./Header.scss";
 import Logo from "../../assets/icons/myntra-icon.png";
 import { socialLinks, menulinks, navLinks } from "../../data/links";
 import { purple } from "../../constants/Colors";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -28,9 +29,7 @@ const Header = () => {
       </div>
       <div className="bottom-section">
         {navLinks.map(({ name, path }, index) => (
-          <p className="link" key={index}>
-            {name}
-          </p>
+          <Link to={path}><p className="link" key={index}>{name}</p></Link>
         ))}
       </div>
     </header>
