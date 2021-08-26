@@ -84,7 +84,7 @@ class ShareClothes extends React.Component {
                         </TextField>
                     </div>    
                     <div style={{marginTop: "15px"}}>
-                        <Button variant="contained" style={{backgroundColor: "#9ce7d1", padding: "15px", border: "none", width: "100%"}} onClick={this.onSubmit}>Submit</Button>
+                        <Button variant="contained" style={{backgroundColor: "#eda3b5", padding: "15px", border: "none", width: "100%", color: "white"}} onClick={this.onSubmit}>Submit</Button>
                     </div>    
                 </div>
             </div>    

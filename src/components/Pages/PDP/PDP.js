@@ -1,12 +1,12 @@
 import {useLocation} from 'react-router-dom';
 import DressProduct from '../../ProductCards/DressProduct/DressProduct';
 
-const PDP = () => {
+const PDP = (props) => {
 
     const location = useLocation();
 
-    const {product} = location.state
-    
+    const {product} = location.state;
+
     return (
         <div>
             <DressProduct productDetails={product} />

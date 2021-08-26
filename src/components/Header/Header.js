@@ -39,7 +39,7 @@ const Header = () => {
         </div>
         <div style={{display: "flex", alignItems: "center", marginRight: "10px"}}>
           <Link to="/share-clothes" style={{textDecoration: "none"}}>
-            <Button variant="contained" style={{backgroundColor: "#9ce7d1", padding: "15px", border: "none"}}>Return Or Share Clothes</Button>
+            <Button variant="contained" style={{backgroundColor: "#eda3b5", padding: "15px", border: "none", color: "white"}}>Return Or Share Clothes</Button>
           </Link>
         </div>  
       </div>

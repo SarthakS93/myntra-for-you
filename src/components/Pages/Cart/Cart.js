@@ -5,8 +5,9 @@ import Button from '@material-ui/core/Button';
 import CartCard from '../../ProductCards/CartCard/CartCard';
 import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom";
+import emptyBagImage from "../../../assets/images/empty-bag.webp";
 
-const emptyBagImage = "https://constant.myntassets.com/checkout/assets/img/empty-bag.webp";
+// const emptyBagImage = "https://constant.myntassets.com/checkout/assets/img/empty-bag.webp";
 
 
 class Cart extends React.Component {
@@ -93,7 +94,7 @@ class Cart extends React.Component {
                                 </div>
                                 <div style={{alignItems: "center", marginRight: "10px", textAlign: "center", marginTop: "15px"}}>
                                     <Link to="/buyback-store" style={{textDecoration: "none"}}>
-                                        <Button variant="contained" style={{backgroundColor: "#f5a4b8", padding: "15px", border: "none"}}>Go To Store</Button>
+                                        <Button variant="contained" style={{backgroundColor: "#eda3b5", padding: "15px", border: "none", color: "white"}}>Go To Store</Button>
                                     </Link>
                                 </div>  
                             </div>  
