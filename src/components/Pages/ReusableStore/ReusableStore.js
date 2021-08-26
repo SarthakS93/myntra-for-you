@@ -1,9 +1,10 @@
-
+import Products from '../../ProductCards/Products/Products';
+import { products } from '../../../data/products';
 
 const ReusableStore = () => {
     return (
         <div>
-            ReusableStore
+            <Products productList={products} title={"Clothes made of recyclable material"} />
         </div>
     );
 };
