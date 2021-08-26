@@ -1,7 +1,7 @@
 import React from "react";
 import "./Products.scss";
-import { products } from "../../../data/products";
 import ProductCard from "./ProductCard";
+import { Link } from "react-router-dom";
 
 const Products = (props) => {
 
@@ -16,15 +16,13 @@ const Products = (props) => {
     title = "";
   }
 
-  
-
   return (
     <div className="wrapper">
       <div className="products">
         <p className="card-title">{title}</p>
         <div className="items">
           {products.map((product, index) => (
-            <ProductCard product={product} key={index} />
+            <Link to={{pathname:"/pdp", state:{product}}} style={{textDecoration: "none"}}><ProductCard product={product} key={index} /></Link>
           ))}
         </div>
       </div>

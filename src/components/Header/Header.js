@@ -4,6 +4,8 @@ import Logo from "../../assets/icons/myntra-icon.png";
 import { socialLinks, menulinks, navLinks } from "../../data/links";
 import { purple } from "../../constants/Colors";
 import { Link } from "react-router-dom";
+import Button from '@material-ui/core/Button';
+
 
 const Header = () => {
   return (
@@ -29,10 +31,17 @@ const Header = () => {
           ))}
         </div>
       </div>
-      <div className="bottom-section">
-        {navLinks.map(({ name, path }, index) => (
-          <Link to={path} style={{textDecoration: "none"}}><p className="link" key={index}>{name}</p></Link>
-        ))}
+      <div style={{display: "flex", justifyContent: "space-between"}}>
+        <div className="bottom-section">
+          {navLinks.map(({ name, path }, index) => (
+            <Link to={path} style={{textDecoration: "none"}}><p className="link" key={index}>{name}</p></Link>
+          ))}
+        </div>
+        <div style={{display: "flex", alignItems: "center", marginRight: "10px"}}>
+          <Link to="/share-clothes" style={{textDecoration: "none"}}>
+            <Button variant="contained" style={{backgroundColor: "#9ce7d1", padding: "15px", border: "none"}}>Return Or Share Clothes</Button>
+          </Link>
+        </div>  
       </div>
     </header>
   );

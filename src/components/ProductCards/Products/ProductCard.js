@@ -1,11 +1,15 @@
 import React from "react";
 
 const ProductCard = (props) => {
-  console.log(props);
   let productProperties = props.product;
+  let image = "";
+  if (productProperties !== undefined) {
+    image = productProperties.images[0]
+  }
+
   return (
     <div className="product">
-    <img src={productProperties.image} alt={productProperties.name} />
+    <img src={image} alt={productProperties.name} />
     <div className="content">
       <div>
         <p className="card-title">{productProperties.name}</p>

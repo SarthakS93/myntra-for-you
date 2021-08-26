@@ -32,9 +32,11 @@ function setActiveTabIndex(x) {
   console.log(x);
 }
 
-const DressProduct = () => {
+const DressProduct = (props) => {
   const activeImageIndex = 0;
   const activeTabIndex = 1;
+
+  let productDetails = props.productDetails;
 
   return (
     <div className="dress-product-container">
@@ -93,7 +95,7 @@ const DressProduct = () => {
               <img src={HeartIcon} alt="heart-icon" />
             </div>
           </div>
-          <p className="card-title">Black Valentino dress</p>
+          <p className="card-title">{productDetails.name}</p>
           <div className="rating-container">
             {starRatings.map((color, index) => (
               <div className="star">
@@ -118,7 +120,7 @@ const DressProduct = () => {
           </div>
           <div className="tab-content">{tabs[activeTabIndex].content}</div>
           <div className="bottom-row">
-            <p className="card-title">$1315</p>
+            <p className="card-title">${productDetails.price}</p>
             <button className="button-main">Shop Now</button>
             <button className="button-main">Add to cart</button>
           </div>

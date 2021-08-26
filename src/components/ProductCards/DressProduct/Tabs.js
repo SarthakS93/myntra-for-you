@@ -4,16 +4,23 @@ import { pink, purple } from "../../../constants/Colors";
 const sizes = ["XS", "S", "M"];
 const colors = ["#1C2437", "#117680", "#32E1C4"];
 
-const Info = () => {
-  const [activeColorIndex, setActiveColorIndex] = useState<number>(0);
-  const [activeSizeIndex, setActiveSizeIndex] = useState<number>(1);
+function setActiveColorIndex(x) {
+  console.log(x);
+}
+
+function setActiveSizeIndex(x) {
+  console.log(x);
+}
+
+
+const Info = (props) => {
+  const activeColorIndex = 0
+  const activeSizeIndex = 0;
 
   return (
     <div className="info-container">
       <p>
-        Dress with tulle and collar Peter Pan from REDValentino (Red Valentino).
-        Peter Pan collar, tulle panels, sleeveless model, concealed back zipper
-        and pleated skirt. Black colour.
+        {props.description}
       </p>
       <div className="specs-container">
         <div>
@@ -67,13 +74,13 @@ const Info = () => {
   );
 };
 
-const Brand = () => (
+const Brand = (props) => (
   <div className="brand-container">
     <p>Brand</p>
   </div>
 );
 
-const Delivery = () => (
+const Delivery = (props) => (
   <div className="brand-container">
     <p>Delivery</p>
   </div>

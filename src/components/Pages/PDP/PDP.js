@@ -5,11 +5,11 @@ const PDP = () => {
 
     const location = useLocation();
 
-    const {key} = location.state
+    const {product} = location.state
     
     return (
         <div>
-            <DressProduct />
+            <DressProduct productDetails={product} />
         </div>
     );
 };
