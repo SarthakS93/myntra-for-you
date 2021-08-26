@@ -29,6 +29,33 @@ class Cart extends React.Component {
       
     }
 
+    onDelete = (product, event) => {
+        let cartItems = localStorage.getItem("cartItems");
+        if (cartItems === null || cartItems === undefined) {
+            cartItems = [];
+        }
+        else {
+            cartItems = JSON.parse(cartItems);
+            let productIndex = null;
+            for (let i = 0; i < cartItems.length; i++) {
+                if (cartItems[i].id === product.id) {
+                    productIndex = i;
+                    break;
+                }
+            }
+
+            if (productIndex !== null) {
+                cartItems.splice(productIndex, 1);
+            }
+        }
+
+        this.setState({
+            products: cartItems
+        });
+
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    }
+
     onSubmit = (event) => {
         console.log("On Submit");
     };
@@ -42,7 +69,7 @@ class Cart extends React.Component {
                     <div style={{marginTop: "100px", marginBottom: "100px", height: "500px"}}>
 
                         {products.map((product, index) => (
-                            <CartCard product={product} key={index} />
+                            <CartCard product={product} key={index} onDelete={this.onDelete} />
                         ))}
                     </div>
                 </div>    

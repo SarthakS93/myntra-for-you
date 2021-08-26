@@ -55,7 +55,7 @@ const DressProduct = (props) => {
     }
 
     cartItems.push(product);
-    localStorage.setItem("cartItems", JSON.stringify(cartItems))
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }
 
   return (

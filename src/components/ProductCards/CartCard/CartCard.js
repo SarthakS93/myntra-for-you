@@ -66,7 +66,7 @@ export default function MediaControlCard(props) {
                 </Typography>
             </CardContent>
             <div className={classes.controls}>
-                <IconButton aria-label="play/pause">
+                <IconButton aria-label="play/pause" onClick={(e) => props.onDelete(product, e)}>
                     <DeleteForeverIcon className={classes.playIcon} />
                 </IconButton>
             </div>
