@@ -25,14 +25,17 @@ export const menulinks = [
   {
     id: "search",
     image: Search,
+    path: "/",
   },
   {
     id: "cart",
     image: Cart,
+    path: "/cart",
   },
   {
     id: "profile",
     image: User,
+    path: "/",
   },
 ];
 

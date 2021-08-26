@@ -6,6 +6,7 @@ import SharingStore from '../components/Pages/SharingStore/SharingStore';
 import BuybackStore from '../components/Pages/BuybackStore/BuybackStore';
 import PDP from '../components/Pages/PDP/PDP';
 import ShareClothes from '../components/Pages/ShareClothes/ShareClothes';
+import Cart from '../components/Pages/Cart/Cart';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -30,6 +31,9 @@ function MainContainer() {
             </Route>
             <Route path="/share-clothes">
               <ShareClothes />
+            </Route>
+            <Route path="/cart">
+              <Cart />
             </Route>
             <Route path="/">
               <Home />

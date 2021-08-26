@@ -26,8 +26,8 @@ const Header = () => {
           <h2>Myntra For Earth</h2>
         </div>
         <div className="extra-links">
-          {menulinks.map(({ image, id }, index) => (
-            <img src={image} alt={id} key={index} />
+          {menulinks.map(({ image, id, path }, index) => (
+            <Link to={path}><img src={image} alt={id} key={index} /></Link>
           ))}
         </div>
       </div>

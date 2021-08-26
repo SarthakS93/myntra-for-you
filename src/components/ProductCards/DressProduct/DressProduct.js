@@ -32,11 +32,31 @@ function setActiveTabIndex(x) {
   console.log(x);
 }
 
+
+
 const DressProduct = (props) => {
   const activeImageIndex = 0;
   const activeTabIndex = 1;
 
   let productDetails = props.productDetails;
+
+  const onAddToCart = (product, event) => {
+    let cartItems = localStorage.getItem("cartItems");
+    if (cartItems === null || cartItems === undefined) {
+      cartItems = [];
+    }
+    else {
+      cartItems = JSON.parse(cartItems);
+      for (let i = 0; i < cartItems.length; i++) {
+        if (cartItems[i].id === product.id) {
+          break;
+        }
+      }
+    }
+
+    cartItems.push(product);
+    localStorage.setItem("cartItems", JSON.stringify(cartItems))
+  }
 
   return (
     <div className="dress-product-container">
@@ -121,8 +141,8 @@ const DressProduct = (props) => {
           <div className="tab-content">{tabs[activeTabIndex].content}</div>
           <div className="bottom-row">
             <p className="card-title">${productDetails.price}</p>
-            <button className="button-main">Shop Now</button>
-            <button className="button-main">Add to cart</button>
+            <button className="button-main" onClick={(e) => onAddToCart(productDetails, e)}>Add to cart</button>
+            {/* <button className="button-main">Add to cart</button> */}
           </div>
         </div>
       </div>
