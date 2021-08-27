@@ -137,7 +137,7 @@ export const sharingStoreProducts = [
 export const reusableStoreProducts = [
   {
     name: "Men's Tshirt",
-    images: ["https://assets.ajio.com/medias/sys_master/root/20210811/FUVL/6112ed79f997ddce899aedcd/-473Wx593H-460928117-blue-MODEL.jpg"],
+    images: ["https://assets.ajio.com/medias/sys_master/root/20210811/FUVL/6112ed79f997ddce899aedcd/-473Wx593H-460928117-blue-MODEL.jpg", "https://assets.ajio.com/medias/sys_master/root/20210811/UJEI/6112deccaeb269a2686eddb3/-473Wx593H-460928117-blue-MODEL2.jpg"],
     price: 100,
     description: "Made of recyclable Material",
     brand: "Nike",
@@ -147,7 +147,7 @@ export const reusableStoreProducts = [
   },
   {
     name: "Men's Tshirt",
-    images: ["https://assets.ajio.com/medias/sys_master/root/20210317/RNcF/605229417cdb8c1f1466129c/nike_blue_team_india_cricket_jersey.jpg"],
+    images: ["https://assets.ajio.com/medias/sys_master/root/20210317/RNcF/605229417cdb8c1f1466129c/nike_blue_team_india_cricket_jersey.jpg", "https://assets.ajio.com/medias/sys_master/root/h7d/hc4/12826824605726/-473Wx593H-460311365-multi-MODEL5.jpg"],
     price: 54,
     description: "Made of recyclable Material",
     brand: "Puma",
@@ -187,7 +187,7 @@ export const reusableStoreProducts = [
   },
   {
     name: "Men's Tshirt",
-    images: ["https://assets.ajio.com/medias/sys_master/root/20210617/6Spw/60ca4c08aeb269a9e3eb402e/-473Wx593H-410289755-01c-MODEL.jpg"],
+    images: ["https://assets.ajio.com/medias/sys_master/root/20210617/6Spw/60ca4c08aeb269a9e3eb402e/-473Wx593H-410289755-01c-MODEL.jpg", "https://assets.ajio.com/medias/sys_master/root/20210617/BD5g/60ca546bf997ddb312cd3cae/-473Wx593H-410289755-01c-MODEL5.jpg"],
     price: 180,
     description: "Made of recyclable Material",
     brand: "Adidas",
