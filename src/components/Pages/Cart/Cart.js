@@ -150,7 +150,7 @@ class Cart extends React.Component {
                                             ))
                                         }
     
-                                        <div style={{marginTop: "15px"}}><Typography variant="h6" color="primary"><p style={{fontFamily: "MuliBold", color: "black"}}>{"Total - " + price}</p></Typography></div>
+                                        <div style={{marginTop: "15px"}}><Typography variant="h6" color="primary"><p style={{fontFamily: "MuliBold", color: "black"}}>{"Total - "} &#8377;{price}</p></Typography></div>
     
                                         <div style={{marginTop: "15px"}}>
                                             <Button variant="contained" style={{backgroundColor: "#eda3b5", padding: "15px", border: "none", width: "100%", color: "white"}} onClick={this.onAddAddress}>Add address</Button>

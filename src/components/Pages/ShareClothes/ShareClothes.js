@@ -97,6 +97,7 @@ class ShareClothes extends React.Component {
                 city: this.state.city,
                 pincode: this.state.pincode,
             },
+            orderType: this.state.returnType,
         };
 
         console.log("############");

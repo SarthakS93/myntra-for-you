@@ -66,7 +66,7 @@ export default function MediaControlCard(props) {
                     {product.name}
                 </Typography>
                 <Typography variant="subtitle1" color="textSecondary">
-                    {product.price}
+                &#8377;{product.price}
                 </Typography>
             </CardContent>
             <div className={classes.controls}>
