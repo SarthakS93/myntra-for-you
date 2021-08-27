@@ -2,11 +2,16 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import Button from '@material-ui/core/Button';
-
+import { withRouter } from 'react-router';
 
 /**
  * image upload tutorial - https://programmingwithmosh.com/javascript/react-file-upload-proper-server-side-nodejs-easy/
+ * 
  */
+
+
+const dummyImg = "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14591374/2021/8/13/159dc713-e779-4bfa-80ad-688a5af684131628834785890-Calvin-Klein-Jeans-Men-Tshirts-6271628834785356-1.jpg"; 
+
 
 const returnTypeList = [
     {
@@ -32,6 +37,10 @@ class ShareClothes extends React.Component {
         category: "",
         brand: "",
         description: "",
+        city: "",
+        street: "",
+        pincode: "",
+        showAddressFields: false,
       };
     }
   
@@ -64,12 +73,43 @@ class ShareClothes extends React.Component {
             category: this.state.category,
             brand: this.state.brand,
             price: this.state.returnType === "Buyback" ? this.state.price : 0,
-            images: [this.state.selectedFile]
+            images: [dummyImg]
         };
 
         console.log(product);
-        console.log(product.images[0].value);
-        console.log(URL.createObjectURL(product.images[0]));
+        // console.log(URL.createObjectURL(product.images[0]));
+
+        console.log("logged product");
+
+        let myOrders = localStorage.getItem("orders");
+        if (myOrders === null || myOrders === undefined) {
+            myOrders = [];
+        }
+        else {
+            myOrders = JSON.parse(myOrders);
+            console.log("got orders");
+        }
+
+        let order = {
+            products: [product],
+            address: {
+                street: this.state.street,
+                city: this.state.city,
+                pincode: this.state.pincode,
+            },
+        };
+
+        console.log("############");
+        console.log("order");
+        console.log(order);
+
+        myOrders.push(order);
+        localStorage.setItem("orders", JSON.stringify(myOrders));
+        console.log("!!!!!!!!!!!!!");
+        this.props.history.push('/order-successful');
+
+        
+
     };
 
     onTextFieldChangeHandler = (id, event) => {
@@ -118,4 +158,4 @@ class ShareClothes extends React.Component {
     }
   }
   
-  export default ShareClothes;
+  export default withRouter(ShareClothes);
