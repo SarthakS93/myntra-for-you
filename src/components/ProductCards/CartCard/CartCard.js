@@ -10,6 +10,8 @@ import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 
+const dummyImage = "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7488102/2019/8/22/8002a744-0dad-4dbb-9481-cf0090134c3b1566454086786-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-1.jpg";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -47,15 +49,15 @@ export default function MediaControlCard(props) {
 
   let product = props.product;
 
+  console.log(product);
+
   return (
     <Card className={classes.root}>
-
-
       
         <CardMedia
             className={classes.cover}
-            image="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7488102/2019/8/22/8002a744-0dad-4dbb-9481-cf0090134c3b1566454086786-Dennis-Lingo-Men-Pink-Slim-Fit-Solid-Casual-Shirt-9891566454-1.jpg"
             title="Live from space album cover"
+            image={product.images[0]}
         />
 
         <div className={classes.details}>

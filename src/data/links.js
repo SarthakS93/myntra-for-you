@@ -25,7 +25,7 @@ export const menulinks = [
   {
     id: "search",
     image: Search,
-    path: "/",
+    path: "/buyback-store",
   },
   {
     id: "cart",
@@ -35,7 +35,7 @@ export const menulinks = [
   {
     id: "profile",
     image: User,
-    path: "/",
+    path: "/orders",
   },
 ];
 

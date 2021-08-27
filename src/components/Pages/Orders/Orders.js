@@ -54,7 +54,7 @@ class Orders extends React.Component {
                     <div style={{marginTop: "80px"}}>
 
                         {orders.map((order, index) => (
-                            <div style={{marginBottom: "20px"}}>
+                            <div style={{marginBottom: "30px"}}>
                                 <Typography variant="subtitle1" color="textSecondary">{order.products.length} product(s) to be delivered at {order.address.street + ", " + order.address.city}</Typography>
                                 <Typography variant="subtitle2" color="textSecondary">Total Price {calculateTotalPrice(order.products)}</Typography>
                                 <Typography variant="subtitle2" color="textSecondary">Ordered on {"Friday, 27th Aug"}</Typography>
