@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     width: "400px",
     height: "180px",
-    marginTop: "20px",
+    marginTop: "10px",
+    marginBottom: "10px",
   },
   details: {
     display: 'flex',
@@ -67,9 +68,14 @@ export default function MediaControlCard(props) {
                 </Typography>
             </CardContent>
             <div className={classes.controls}>
-                <IconButton aria-label="play/pause" onClick={(e) => props.onDelete(product, e)}>
-                    <DeleteForeverIcon className={classes.playIcon} />
-                </IconButton>
+                {
+                    props.myOrders ?
+                    null
+                    :
+                    <IconButton aria-label="play/pause" onClick={(e) => props.onDelete(product, e)}>
+                        <DeleteForeverIcon className={classes.playIcon} />
+                    </IconButton>
+                }
             </div>
         </div>
 

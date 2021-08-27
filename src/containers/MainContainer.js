@@ -18,7 +18,7 @@ function MainContainer() {
         <Router>
           <Header />
 
-          <div style={{height: "800px", backgroundColor: "white"}}>
+          <div style={{minHeight: "800px", backgroundColor: "white", overflow: "scroll", paddingBottom: "20px"}}>
             <Switch>
               <Route path="/reusable-store">
                 <ReusableStore />
