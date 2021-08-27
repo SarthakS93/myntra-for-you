@@ -13,7 +13,7 @@ const WhiteDress = () => (
       <p className="card-title">white jacket</p>
 
       <div className="row">
-        <p className="card-title">$120</p>
+        <p className="card-title">&#8377;120</p>
         <button className="button-main">Show Now</button>
       </div>
     </div>

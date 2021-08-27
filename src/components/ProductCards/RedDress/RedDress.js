@@ -12,7 +12,7 @@ const RedDress = () => (
         <p className="card-title">Red dress</p>
         <p className="card-title">Valentino</p>
       </div>
-      <p className="card-title">$1610</p>
+      <p className="card-title">&#8377;1610</p>
       <button className="button-main">Shop Now</button>
     </div>
     <img src={Image} alt="Red dress" />

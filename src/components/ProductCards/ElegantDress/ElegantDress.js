@@ -17,7 +17,7 @@ const ElegantDress = () => {
           label de...
         </p>
         <div className="row">
-          <p className="price">$54</p>
+          <p className="price">&#8377;54</p>
           <button className="button-main">Show Now</button>
         </div>
       </div>

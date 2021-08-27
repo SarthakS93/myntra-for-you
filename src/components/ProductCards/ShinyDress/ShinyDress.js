@@ -13,7 +13,7 @@ const ShinyDress = () => (
         <p className="card-title">Shiny dress</p>
         <p className="card-title">Givenchy</p>
       </div>
-      <p className="card-title">$640</p>
+      <p className="card-title">&#8377;640</p>
       <button className="button-main">Shop Now</button>
     </div>
   </div>
