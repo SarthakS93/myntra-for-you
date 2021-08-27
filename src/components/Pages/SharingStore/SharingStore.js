@@ -1,10 +1,10 @@
 import Products from '../../ProductCards/Products/Products';
-import { products } from '../../../data/products';
+import { sharingStoreProducts } from '../../../data/products';
 
 const SharingStore = () => {
     return (
         <div>
-            <Products productList={products} title={"Clothes available for sharing"} />
+            <Products productList={sharingStoreProducts} title={"Clothes available for sharing"} />
         </div>
     );
 };

@@ -175,7 +175,7 @@ class DressProduct extends React.Component {
             </div>
             <div className="tab-content">{activeTabIndex === 0 ? <Info description={productDetails.description} /> : <Brand  brand={productDetails.brand} />}</div>
             <div className="bottom-row">
-              <p className="card-title">${productDetails.price}</p>
+              <p className="card-title">&#8377;{productDetails.price}</p>
               <button className="button-main" onClick={(e) => this.onAddToCart(productDetails, e)}>{this.state.addedToCart ? "In Cart" : "Add to cart"}</button>
               {/* <button className="button-main">Add to cart</button> */}
             </div>

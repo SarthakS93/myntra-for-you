@@ -35,7 +35,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     paddingLeft: theme.spacing(1),
     paddingBottom: theme.spacing(1),
-    justifyContent: "flex-end"
   },
   playIcon: {
     height: 38,
@@ -74,7 +73,7 @@ export default function MediaControlCard(props) {
                     props.myOrders ?
                     null
                     :
-                    <IconButton aria-label="play/pause" onClick={(e) => props.onDelete(product, e)}>
+                    <IconButton aria-label="play/pause" onClick={(e) => props.onDelete(product, e)} >
                         <DeleteForeverIcon className={classes.playIcon} />
                     </IconButton>
                 }
