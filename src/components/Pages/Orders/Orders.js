@@ -41,8 +41,10 @@ class Orders extends React.Component {
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                     <div style={{marginTop: "100px", marginBottom: "100px", height: "500px"}}>
 
-                        {products.map((product, index) => (
-                            <CartCard product={product} key={index} />
+                        {orders.map((order, index) => (
+                            order.products.map((product, innerIndex) => (
+                                <CartCard product={product} key={index} />
+                            ))
                         ))}
                     </div>
                 </div>    

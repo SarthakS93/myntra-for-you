@@ -75,7 +75,7 @@ const Info = (props) => {
 };
 
 const Brand = (props) => (
-  <div className="brand-container">
+  <div className="info-container">
     <p>Brand - {props.brand}</p>
   </div>
 );
